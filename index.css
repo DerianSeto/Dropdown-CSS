@@ -1,0 +1,110 @@
+/* It's ugly, but it works */ /*  */
+
+a{ /* For looks */
+	color: #5CFFFF;
+}
+	a:hover{ /* For looks */
+		color: #FFFFFF;
+	}
+
+
+ul{
+	transition: height 300ms; /* Transition the height property over 300 milliseconds */
+	overflow: clip; /* Same as hidden, but allows space outside the div*/
+	height: 0px; /* Initialize */
+	
+	/* For looks */
+	width: 100%;
+	list-style-type: none;
+}
+	li{
+		transition: background-color 300ms; /* Transition the height property over 300 milliseconds */
+		
+		/* For looks */
+		text-indent: 2%;
+		width: 100%;
+	}
+
+
+body{ /* For looks */
+	color: #EDFDFD;
+	background-color: #073636;
+	font-family: "Gill Sans", sans-serif;
+}
+
+	header{
+		z-index: 1; /* Visual priority | Higher than content */
+		
+		/* For looks */
+		width: 99%;
+		position: absolute;
+	}
+
+		#TitleImage{ /* For looks */
+			color: #FFFFFF;
+		}
+
+			#Title{ /* For looks */
+				float: right;
+				background-color: #00A6A6;
+				width: 80%;
+				padding: 20px 0px 20px 0px; /* Space from the border | Top, right, bottom, left */
+				text-align: center;
+				font-size: 34px;/* H1 size */
+				border-radius: 0px 25px 0px 0px; /*Rounded corners | Top left, right, bottom right, left*/
+			}
+
+			#MenuDropBtn{ /* For looks */
+				width: 20%;
+				height: 20%;
+			}
+				#MenuDropBtn:hover button{ /* For looks */
+					background-color: #036565;
+					color: #5CFFFF;
+				}
+			
+				#Dropbtn{
+					transition: background-color 300ms; /* Transition the height property over 300 milliseconds */
+					
+					/* For looks */
+					color: #FFFFFF;
+					border-right: 5px solid #070E0E;
+					float: left;
+					width: 100%;
+					padding: 20px 0px 20px 0px; /* Space from the border | Top, right, bottom, left */
+					border: none;
+					font-size: 34px;/* H1 size */
+					border-radius: 25px 0px 0px 0px; /* Rounded corners | Top left, top right, bottom right, bottom left */
+					background-color: #00A6A6;
+				}
+
+				#Main{ /* For looks */
+					background-color: #036565;
+					padding: 0px 0px 0px 8%; /* This list's distance from the sides | Top, right, bottom, left */
+					margin: 0px;
+					width: 92%;
+					line-height: 1.5;
+					text-align: left;
+					float: left;
+					border-radius: 0px 0px 25px 25px; /*Rounded corners | Top left, right, bottom right, left*/
+					clear: both; /* Clears objects floating both left and right (Title and button) */
+				}
+					#Main li:hover{ /* For looks */
+						background-color: #052424;
+					}
+					
+					.Insets{ /* For looks */
+						background-color: #052424;
+					}
+						#Main .Insets li:hover{ /* For looks */
+							background-color: #070E0E;
+						}
+				
+	
+	main{
+		z-index: 0; /* Visual priority | Lower than header */
+		
+		/* For looks */
+		position: absolute;
+		top: 100px;
+	}

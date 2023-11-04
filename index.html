@@ -1,0 +1,82 @@
+
+<head>
+	<title>Dropdown Spline</title>
+		<link rel="stylesheet" href="index.css">
+		<script src="Dropdown.js"></script>
+</head>
+
+
+<body>
+	<header>
+		<div id="TitleImage">
+			<div id="Title">Dropdown</div>
+			
+			<div id="MenuDropBtn" onmouseenter='InsetDrop("Main", false);' onmouseleave='InsetDrop("Main", true);'> <!-- Contains  -->
+				<button id="Dropbtn">Drop</button>
+				<ul id="Main" style="position: relative;">
+					<div style="height:10px;"></div>
+					
+					<a href="">
+						<li style="position:absolute; top:0px; z-index:6;" onmouseenter='InsetDrop("Inset1", false);' onmouseleave='InsetDrop("Inset1", true);'>Home
+							<ul class="Insets" id="Inset1">
+								<a href=""><li>Yes</li></a>
+								<a href=""><li>Yes</li></a>
+								<a href=""><li>Yes</li></a>
+							</ul>
+						</li>
+					</a>
+					
+					<a href="">
+						<li style="position:absolute; top:25px; z-index:5;" onmouseenter='InsetDrop("Inset2", false);' onmouseleave='InsetDrop("Inset2", true);'>Menu
+							<ul class="Insets" id="Inset2">
+								<a href=""><li>Yes</li></a>
+								<a href=""><li>Yes</li></a>
+							</ul>
+						</li>
+					</a>
+					
+					<a href="">
+						<li style="position:absolute; top:50px; z-index:4;" onmouseenter='InsetDrop("Inset3", false);'  onmouseleave='InsetDrop("Inset3", true);'>Live
+							<ul class="Insets" id="Inset3">
+								<a href=""><li>Yes</li></a>
+								<a href=""><li>Yes</li></a>
+								<a href=""><li>Yes</li></a>
+								<a href=""><li>Yes</li></a>
+							</ul>
+						</li>
+					</a>
+					
+					<a href="">
+						<li style="position:absolute; top:75px; z-index:3;" onmouseenter='InsetDrop("Inset4", false);' onmouseleave='InsetDrop("Inset4", true);'>Laugh
+							<ul class="Insets" id="Inset4">
+								<a href=""><li>Yes</li></a>
+								<a href=""><li>Yes</li></a>
+								<a href=""><li>Yes</li></a>
+							</ul>
+						</li>
+					</a>
+					
+					<a href="">
+						<li style="position:absolute; top:100px; z-index:2;" onmouseenter='InsetDrop("Inset5", false);' onmouseleave='InsetDrop("Inset5", true);'>Shred
+							<ul class="Insets" id="Inset5">
+								<a href=""><li>Yes</li></a>
+							</ul>
+						</li>
+					</a>
+					
+				</ul>
+				
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		<br>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,
+		<br>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty
+		<br>through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.
+		<br>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed
+		<br>and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that
+		<br>pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects
+		<br>pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+	</main>
+</body>
