@@ -9,279 +9,164 @@
 <body>
 	<header>
 		<div id="TitleImage">
-			<div id="Title">Dropdown</div>
+			<div id="Title">
+				<table cols="2">
+					<tr>
+						<td id="Image" rowspan="2">
+							<img src="Images/Me.png">
+						</td>
+						
+						<td class="TableSpace" rowspan="2"></td>
+						
+						<td id="Header" rowspan="2">
+							<h1>Company</h1>
+						</td>
+						
+						<td class="TableSpace" rowspan="2"></td>
+						
+						<td id="DateLabel"></td>
+					</tr>
+					
+					<tr>
+						<td id="Form">
+							<input type="text" onsearch="Search();" placeholder="Search...">
+							<button id="SearchBtn" onclick="Search();"><img src="Images/SearchBtn.png"></button>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
 			<div id="Menus">
-				<div id="MenuDropBtn1" class="MenuDropBtns" onmouseenter='Drop("Main", false);' onmouseleave='Drop("Main", true);'>
-					<button id="Dropbtn1" class="Buttons">Drop</button>
-					<ul id="Main" class="Mains" style="position: relative;">
-						<div style="height:10px;"></div>
-						
-						<a href="">
-							<li style="position:absolute; top:0px; z-index:6;" onmouseenter='Drop("MInsets1", false);' onmouseleave='Drop("MInsets1", true);'>Home
-								<ul class="Insets" id="MInsets1">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					
-						<a href="">
-							<li style="position:absolute; top:25px; z-index:5;" onmouseenter='Drop("MInsets2", false);' onmouseleave='Drop("MInsets2", true);'>Menu
-								<ul class="Insets" id="MInsets2">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-						
-						<a href="">
-							<li style="position:absolute; top:50px; z-index:4;" onmouseenter='Drop("MInsets3", false);'  onmouseleave='Drop("MInsets3", true);'>Live
-								<ul class="Insets" id="MInsets3">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					
-						<a href="">
-							<li style="position:absolute; top:75px; z-index:3;" onmouseenter='Drop("MInsets4", false);' onmouseleave='Drop("MInsets4", true);'>Laugh
-								<ul class="Insets" id="MInsets4">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					
-						<a href="">
-							<li style="position:absolute; top:100px; z-index:2;" onmouseenter='Drop("MInsets5", false);' onmouseleave='Drop("MInsets5", true);'>Shred
-								<ul class="Insets" id="MInsets5">
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					</ul>
+				<div id="MenuDropBtn1" class="MenuDropBtns">
+					<a href="index.html"><button id="Dropbtn1" class="Buttons">Home</button></a>
 				</div>
 		
-				<div id="MenuDropBtn2" class="MenuDropBtns" onmouseenter='Drop("Second", false);' onmouseleave='Drop("Second", true);'>
-					<button id="Dropbtn2" class="Buttons">Drop</button>
-					<ul id="Second" class="Mains" style="position: relative;">
-						<div style="height:10px;"></div>
+				<div id="MenuDropBtn2" class="MenuDropBtns">
+					<button id="Dropbtn2" class="Buttons">News &amp Events</button>
+					<ul id="Second" class="Mains">
+						<div class="LiSpace"></div>
 						
-						<a href="">
-							<li style="position:absolute; top:0px; z-index:6;" onmouseenter='Drop("SInsets1", false);' onmouseleave='Drop("SInsets1", true);'>Home
+						<a href="Images/Piracy.png">
+							<li style="position:absolute; top:0px; z-index:4;">Place Holder
 								<ul class="Insets" id="SInsets1">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
 								</ul>
 							</li>
 						</a>
 					
-						<a href="">
-							<li style="position:absolute; top:25px; z-index:5;" onmouseenter='Drop("SInsets2", false);' onmouseleave='Drop("SInsets2", true);'>Menu
+						<a href="Images/Piracy.png">
+							<li style="position:absolute; top:25px; z-index:3;">Place Holder
 								<ul class="Insets" id="SInsets2">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
 								</ul>
 							</li>
 						</a>
 						
-						<a href="">
-							<li style="position:absolute; top:50px; z-index:4;" onmouseenter='Drop("SInsets3", false);'  onmouseleave='Drop("SInsets3", true);'>Live
+						<a href="Images/Piracy.png">
+							<li style="position:absolute; top:50px; z-index:2;">Place Holder
 								<ul class="Insets" id="SInsets3">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					
-						<a href="">
-							<li style="position:absolute; top:75px; z-index:3;" onmouseenter='Drop("SInsets4", false);' onmouseleave='Drop("SInsets4", true);'>Laugh
-								<ul class="Insets" id="SInsets4">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					
-						<a href="">
-							<li style="position:absolute; top:100px; z-index:2;" onmouseenter='Drop("SInsets5", false);' onmouseleave='Drop("SInsets5", true);'>Shred
-								<ul class="Insets" id="SInsets5">
-									<a href=""><li>Yes</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
 								</ul>
 							</li>
 						</a>
 					</ul>
 				</div>
 				
-				<div id="MenuDropBtn3" class="MenuDropBtns" onmouseenter='Drop("Third", false);' onmouseleave='Drop("Third", true);'>
-					<button id="Dropbtn3" class="Buttons">Drop</button>
-					<ul id="Third" class="Mains" style="position: relative;">
-						<div style="height:10px;"></div>
+				<div id="MenuDropBtn3" class="MenuDropBtns">
+					<button id="Dropbtn3" class="Buttons">Products &amp Services</button>
+					<ul id="Third" class="Mains">
+						<div class="LiSpace"></div>
 						
-						<a href="">
-							<li style="position:absolute; top:0px; z-index:6;" onmouseenter='Drop("TInsets1", false);' onmouseleave='Drop("TInsets1", true);'>Home
+						<a href="Images/Piracy.png">
+							<li style="position:absolute; top:0px; z-index:4;">Place Holder
 								<ul class="Insets" id="TInsets1">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
 								</ul>
 							</li>
 						</a>
 					
-						<a href="">
-							<li style="position:absolute; top:25px; z-index:5;" onmouseenter='Drop("TInsets2", false);' onmouseleave='Drop("TInsets2", true);'>Menu
+						<a href="Images/Piracy.png">
+							<li style="position:absolute; top:25px; z-index:3;">Place Holder
 								<ul class="Insets" id="TInsets2">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
 								</ul>
 							</li>
 						</a>
 						
-						<a href="">
-							<li style="position:absolute; top:50px; z-index:4;" onmouseenter='Drop("TInsets3", false);'  onmouseleave='Drop("TInsets3", true);'>Live
+						<a href="Images/Piracy.png">
+							<li style="position:absolute; top:50px; z-index:2;">Place Holder
 								<ul class="Insets" id="TInsets3">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					
-						<a href="">
-							<li style="position:absolute; top:75px; z-index:3;" onmouseenter='Drop("TInsets4", false);' onmouseleave='Drop("TInsets4", true);'>Laugh
-								<ul class="Insets" id="TInsets4">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					
-						<a href="">
-							<li style="position:absolute; top:100px; z-index:2;" onmouseenter='Drop("TInsets5", false);' onmouseleave='Drop("TInsets5", true);'>Shred
-								<ul class="Insets" id="TInsets5">
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					</ul>
-				</div>
-			
-				<div id="MenuDropBtn4" class="MenuDropBtns" onmouseenter='Drop("Fourth", false);' onmouseleave='Drop("Fourth", true);'>
-					<button id="Dropbtn4" class="Buttons">Drop</button>
-					<ul id="Fourth" class="Mains" style="position: relative;">
-						<div style="height:10px;"></div>
-						
-						<a href="">
-							<li style="position:absolute; top:0px; z-index:6;" onmouseenter='Drop("FInsets1", false);' onmouseleave='Drop("FInsets1", true);'>Home
-								<ul class="Insets" id="FInsets1">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					
-						<a href="">
-							<li style="position:absolute; top:25px; z-index:5;" onmouseenter='Drop("FInsets2", false);' onmouseleave='Drop("FInsets2", true);'>Menu
-								<ul class="Insets" id="FInsets2">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-						
-						<a href="">
-							<li style="position:absolute; top:50px; z-index:4;" onmouseenter='Drop("FInsets3", false);'  onmouseleave='Drop("FInsets3", true);'>Live
-								<ul class="Insets" id="FInsets3">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					
-						<a href="">
-							<li style="position:absolute; top:75px; z-index:3;" onmouseenter='Drop("FInsets4", false);' onmouseleave='Drop("FInsets4", true);'>Laugh
-								<ul class="Insets" id="FInsets4">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					
-						<a href="">
-							<li style="position:absolute; top:100px; z-index:2;" onmouseenter='Drop("FInsets5", false);' onmouseleave='Drop("FInsets5", true);'>Shred
-								<ul class="Insets" id="FInsets5">
-									<a href=""><li>Yes</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
 								</ul>
 							</li>
 						</a>
 					</ul>
 				</div>
 				
-				<div id="MenuDropBtn5" class="MenuDropBtns" onmouseenter='Drop("Fifth", false);' onmouseleave='Drop("Fifth", true);'>
-					<button id="Dropbtn5" class="Buttons">Drop</button>
-					<ul id="Fifth" class="Mains" style="position: relative;">
-						<div style="height:10px;"></div>
+				<div id="MenuDropBtn4" class="MenuDropBtns">
+					<button id="Dropbtn4" class="Buttons">Directory</button>
+					<ul id="Fourth" class="Mains">
+						<div class="LiSpace"></div>
 						
-						<a href="">
-							<li style="position:absolute; top:0px; z-index:6;" onmouseenter='Drop("VInsets1", false);' onmouseleave='Drop("VInsets1", true);'>Home
+						<a href="Documents/Directory.pdf">
+							<li style="position:absolute; top:0px; z-index:3;">Directory</li>
+						</a>
+						
+						<a href="Images/Piracy.png">
+							<li style="position:absolute; top:25px; z-index:2;">Place Holder
+								<ul class="Insets" id="FInsets2">
+									<li>Place Holder</li>
+									<li>Place Holder</li>
+									<li>Place Holder</li>
+									<li>Place Holder</li>
+									<li>Place Holder</li>
+									<li>Place Holder</li>
+								</ul>
+							</li>
+						</a>
+					</ul>
+				</div>
+				
+				<div id="MenuDropBtn5" class="MenuDropBtns">
+					<button id="Dropbtn5" class="Buttons">Contact Us</button>
+					<ul id="Fifth" class="Mains">
+						<div class="LiSpace"></div>
+						
+						<a href="Images/Piracy.png">
+							<li style="position:absolute; top:0px; z-index:5;">Place Holder
 								<ul class="Insets" id="VInsets1">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
 								</ul>
 							</li>
 						</a>
 					
-						<a href="">
-							<li style="position:absolute; top:25px; z-index:5;" onmouseenter='Drop("VInsets2", false);' onmouseleave='Drop("VInsets2", true);'>Menu
-								<ul class="Insets" id="VInsets2">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
+						<a href="survey.html">
+							<li style="position:absolute; top:25px; z-index:4;">Survey</li>
+								<!-- VInsets2 -->
 						</a>
 						
-						<a href="">
-							<li style="position:absolute; top:50px; z-index:4;" onmouseenter='Drop("VInsets3", false);'  onmouseleave='Drop("VInsets3", true);'>Live
+						<a href="Images/Piracy.png">
+							<li style="position:absolute; top:50px; z-index:3;">Place Holder
 								<ul class="Insets" id="VInsets3">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
+									<a href="Images/Piracy.png"><li>Place Holder</li></a>
 								</ul>
 							</li>
 						</a>
 					
-						<a href="">
-							<li style="position:absolute; top:75px; z-index:3;" onmouseenter='Drop("VInsets4", false);' onmouseleave='Drop("VInsets4", true);'>Laugh
-								<ul class="Insets" id="VInsets4">
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
-						</a>
-					
-						<a href="">
-							<li style="position:absolute; top:100px; z-index:2;" onmouseenter='Drop("VInsets5", false);' onmouseleave='Drop("VInsets5", true);'>Shred
-								<ul class="Insets" id="VInsets5">
-									<a href=""><li>Yes</li></a>
-								</ul>
-							</li>
+						<a href="Documents/Contact.pdf">
+							<li style="position:absolute; top:75px; z-index:2;">Contact</li>
 						</a>
 					</ul>
 				</div>
